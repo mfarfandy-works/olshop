@@ -36,6 +36,41 @@ background-repeat:no-repeat;
 border-radius:20px;
 }
 
+ /* INFO BOX */
+.info-box{
+margin:15px;
+padding:20px;
+border-radius:20px;
+background:linear-gradient(135deg,#5b7688,#7f9cad);
+color:white;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+position:relative;
+overflow:hidden;
+}
+
+.info-box::before{
+content:"";
+position:absolute;
+top:-40px;
+right:-40px;
+width:120px;
+height:120px;
+background:rgba(255,255,255,0.1);
+border-radius:50%;
+}
+
+.info-title{
+font-size:16px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.info-text{
+font-size:13px;
+line-height:1.6;
+opacity:0.95;
+}
+ 
 .wrapper{
 background:#7a7a7a;
 margin:15px;
@@ -103,7 +138,17 @@ Fadhil Shop
 </div>
 
 <div class="banner"></div>
-
+<div class="info-box">
+<div class="info-title">📌 Catatan DIL_SHOP</div>
+<div class="info-text">
+Mohon toleransi terhadap perbedaan warna atau tampilan produk pada foto dengan produk asli.
+Perbedaan dapat terjadi karena pencahayaan, kamera, dan proses color grading.<br><br>
+Kekurangan minor yang tidak terlihat jelas akan tetap diinformasikan secara jujur pada deskripsi produk.<br><br>
+Kami memastikan seluruh produk thrift yang dijual masih layak pakai, berfungsi dengan baik, dan telah melalui pengecekan kualitas.
+<br><br>
+Terima kasih atas pengertiannya 🙏
+</div>
+</div>
 <div class="wrapper">
 <div class="container">
 
@@ -281,6 +326,7 @@ display:block;
 </body>
 
 </html>
+
 
 
 
