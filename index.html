@@ -115,6 +115,38 @@ text-decoration:none;
 margin-top:5px;
 }
 
+/* BACK TO TOP */
+.back-to-top{
+position:fixed;
+bottom:20px;
+right:20px;
+width:45px;
+height:45px;
+background:#5b7688;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+cursor:pointer;
+opacity:0;
+visibility:hidden;
+transition:0.3s;
+z-index:999;
+}
+
+.back-to-top.show{
+opacity:1;
+visibility:visible;
+}
+
+html{
+scroll-behavior:smooth;
+}
+ 
 </style>
 </head>
 
@@ -149,6 +181,21 @@ Kami memastikan seluruh produk thrift yang dijual masih layak pakai, berfungsi d
 Terima kasih atas pengertiannya 🙏
 </div>
 </div>
+
+ <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", function(){
+if(window.scrollY > 300){
+backToTop.classList.add("show");
+}else{
+backToTop.classList.remove("show");
+}
+});
+</script>
+ 
 <div class="wrapper">
 <div class="container">
 
@@ -347,6 +394,146 @@ display:block;
 <div class="price">Rp 15K</div>
 <a href="produk 14.html" class="btn">Lihat</a>
 </div>
+
+<div class="card">
+ <img src="foto produk/jaket adidas.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Jaket Adidas ORI</div>
+<div class="price">Rp 25K</div>
+<a href="produk 15.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/kaos olahraga oversize.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Kaos Olahraga Oversize</div>
+<div class="price">Rp 15K</div>
+<a href="produk 16.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/green screen.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Green Screen</div>
+<div class="price">Rp 15K</div>
+<a href="produk 17.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/lampu belajar.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Lampu Belajar</div>
+<div class="price">Rp 30K</div>
+<a href="produk 18.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/mic boya bym1.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Mic Boya BY-M1</div>
+<div class="price">Rp 30K</div>
+<a href="produk 19.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/mouse gaming revisi.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Mouse Fantech Thor X9</div>
+<div class="price">Rp 30K</div>
+<a href="produk 20.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/kemeja biru muda m231.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Kemeja M231</div>
+<div class="price">Rp 20K</div>
+<a href="produk 21.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/jam tangan lukram mrdiy.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Jam Tangan Mr.DIY</div>
+<div class="price">Rp 15K</div>
+<a href="produk 22.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/phone holder ikea.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Phone Holder IKEA</div>
+<div class="price">Rp 15K</div>
+<a href="produk 23.html" class="btn">Lihat</a>
+</div>
+
+<div class="card">
+ <img src="foto produk/handgrip.jpeg"
+style="
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:10px;
+display:block;
+">  
+<div class="name">Handgrip WANNAFIT</div>
+<div class="price">Rp 15K</div>
+<a href="produk 24.html" class="btn">Lihat</a>
+</div>
  
 </div>
 </div>
@@ -354,6 +541,7 @@ display:block;
 </body>
 
 </html>
+
 
 
 
